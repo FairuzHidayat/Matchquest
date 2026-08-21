@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathQuest — Matematika Kelas 12</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-bg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="math-background.mp4" type="video/mp4">
+    </video>
+    <div class="video-vignette"></div>
+  </div>
+<div class="noise"></div>
+  <div class="math-float-layer" aria-hidden="true">
+    <span class="math-float mf-1">x² + y² = r²</span>
+    <span class="math-float mf-2">lim x→∞</span>
+    <span class="math-float mf-3">∫ f(x) dx</span>
+    <span class="math-float mf-4">a² + b² = c²</span>
+    <span class="math-float mf-5">πr²</span>
+    <span class="math-float mf-6">f(x) = 2x + 1</span>
+    <span class="math-float mf-7">Σ n²</span>
+    <span class="math-float mf-8">sin θ</span>
+    <span class="math-float mf-9">ΔABC</span>
+    <span class="math-float mf-10">√(x + 1)</span>
+    <span class="math-float mf-11">∴</span>
+    <span class="math-float mf-12">∞</span>
+
+    <span class="shape shape-circle sf-1"></span>
+    <span class="shape shape-triangle sf-2"></span>
+    <span class="shape shape-square sf-3"></span>
+    <span class="shape shape-line sf-4"></span>
+    <span class="shape shape-circle sf-5"></span>
+    <span class="shape shape-triangle sf-6"></span>
+  </div>
+
+
+  <header class="navbar">
+    <a class="brand" href="#home"><span class="brand-mark">∑</span><span>Math<span>Quest</span></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#worlds">Materi</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#roadmap">Progress</a>
+    </nav>
+    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Buka menu">☰</button><a class="nav-cta" href="#challenge">Main Sekarang ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> MATEMATIKA KELAS 12 · LEVEL UP YOUR LOGIC</div>
+        <h1>Bukan cuma<br><span>menghitung.</span><br>Pecahkan.</h1>
+        <p class="hero-text">Platform belajar matematika dengan materi inti dan game yang dirancang untuk membuat otak terus aktif.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#challenge">Mulai Tantangan →</a>
+          <a class="btn btn-ghost" href="#materi">Jelajahi Materi</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>03</strong><span>Materi utama</span></div><div class="meta-line"></div>
+          <div><strong>∞</strong><span>Ruang berpikir</span></div><div class="meta-line"></div>
+          <div><strong>XP</strong><span>Setiap quest</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="math-card main-math-card">
+          <div class="card-top"><span class="mini-label">TODAY'S PROBLEM</span><span class="difficulty">HARD</span></div>
+          <div class="equation">lim<span class="small-sub">x→2</span>
+            <span class="fraction"><span>x² − 4</span><i></i><span>x − 2</span></span>
+          </div>
+          <div class="answer-row"><span>Jawabanmu</span><strong>?</strong></div>
+          <div class="progress-track"><span></span></div>
+          <div class="card-footer"><span>Logic Score</span><strong id="heroScore">0 XP</strong></div>
+        </div>
+        <div class="floating-card floating-one"><span class="float-icon">⌁</span><div><strong>Aljabar</strong><small>Quest tersedia</small></div></div>
+        <div class="floating-card floating-two"><span class="float-icon">△</span><div><strong>Geometri</strong><small>Boss puzzle unlocked</small></div></div>
+        <div class="floating-number">12</div>
+      </div>
+    </section>
+
+    <section class="section-shell section" id="materi">
+      <div class="section-heading">
+        <div><span class="section-kicker">01 / CORE MATERIAL</span><h2>Materi yang jadi <em>arena.</em></h2></div>
+        <p>Pelajari konsepnya, lalu buktikan kemampuanmu lewat challenge.</p>
+      </div>
+      <div class="topic-grid">
+        <article class="topic-card mixed"><div class="topic-number">01</div><div class="topic-symbol">∑△∞</div><h3>Mixed Arena</h3><p>Gabungkan Aljabar, Limit, dan Geometri dalam satu ronde. Materi berpindah setiap soal.</p><button class="topic-play" data-topic="mixed">Main Mixed Arena ↗</button></article>
+        <article class="topic-card algebra"><div class="topic-number">02</div><div class="topic-symbol">x²</div><h3>Aljabar</h3><p>Persamaan, fungsi, polinomial, dan pola yang butuh ketelitian.</p><button class="topic-play" data-topic="algebra">Fokus Aljabar ↗</button></article>
+        <article class="topic-card limit"><div class="topic-number">03</div><div class="topic-symbol">lim</div><h3>Limit</h3><p>Konsep pendekatan dan fungsi yang menguji logika serta ketelitian.</p><button class="topic-play" data-topic="limit">Fokus Limit ↗</button></article>
+        <article class="topic-card geometry"><div class="topic-number">04</div><div class="topic-symbol">△</div><h3>Geometri</h3><p>Ruang, luas, volume, sudut, dan problem visual yang menantang.</p><button class="topic-play" data-topic="geometry">Fokus Geometri ↗</button></article>
+      </div>
+    </section>
+
+
+    <section class="material-worlds" id="worlds">
+      <div class="section-shell worlds-head">
+        <span class="section-kicker">01 / MATERIAL WORLDS</span>
+        <h2>Satu materi,<br><em>satu dunia.</em></h2>
+        <p>Setiap materi punya ambience sendiri supaya belajar terasa seperti masuk ke level game yang berbeda.</p>
+      </div>
+
+      <div class="section-shell world-grid">
+        <article class="world-card world-algebra" id="world-algebra">
+          <div class="world-video">
+            <div class="algebra-formulas">
+              <span class="af af1">x² + y² = r²</span>
+              <span class="af af2">2x + 6 = 16</span>
+              <span class="af af3">f(x)=2x+1</span>
+              <span class="af af4">(x+3)(x−3)</span>
+              <span class="af af5">∑ xⁿ</span>
+              <span class="af af6">√(x+1)</span>
+            </div>
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="math-background.mp4" type="video/mp4">
+            </video>
+            <div class="world-overlay"></div>
+          </div>
+          <div class="world-content">
+            <div class="world-index">01</div>
+            <div class="world-symbol">x²</div>
+            <span class="world-tag">ALGEBRA WORLD</span>
+            <h3>Rumus yang hidup.</h3>
+            <p>Persamaan, fungsi, pola, dan manipulasi aljabar masuk ke arena visual yang penuh formula.</p>
+            <button class="world-btn" data-topic="algebra">Masuk Aljabar →</button>
+          </div>
+          <div class="formula-stream">
+            <span>3x + 5 = 20</span><span>(x + 3)(x − 3)</span><span>f(x)=2x+1</span>
+          </div>
+        </article>
+
+        <article class="world-card world-limit" id="world-limit">
+          <div class="graph-bg">
+            <svg viewBox="0 0 700 420" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="gridGlow" x1="0" x2="1">
+                  <stop offset="0" stop-color="#6fe7d7" stop-opacity=".05"/>
+                  <stop offset=".5" stop-color="#6fe7d7" stop-opacity=".22"/>
+                  <stop offset="1" stop-color="#6fe7d7" stop-opacity=".04"/>
+                </linearGradient>
+              </defs>
+              <g class="grid-lines">
+                <path d="M0 70H700M0 140H700M0 210H700M0 280H700M0 350H700"/>
+                <path d="M70 0V420M140 0V420M210 0V420M280 0V420M350 0V420M420 0V420M490 0V420M560 0V420M630 0V420"/>
+              </g>
+              <path class="axis-line" d="M350 0V420M0 210H700"/>
+              <path class="curve curve-one" d="M20 370 C140 360 200 290 260 245 C315 205 333 120 350 65 C369 118 384 205 440 250 C508 305 568 344 680 370"/>
+              <path class="curve curve-two" d="M20 90 C120 105 182 140 248 178 C310 213 330 246 350 292 C373 250 392 215 454 180 C532 136 590 106 680 92"/>
+            </svg>
+          </div>
+          <div class="limit-particles"><i></i><i></i><i></i><i></i></div>
+          <div class="world-content">
+            <div class="world-index">02</div>
+            <div class="world-symbol">lim</div>
+            <span class="world-tag">LIMIT WORLD</span>
+            <h3>Mendekati tanpa berhenti.</h3>
+            <p>Grafik dan fungsi bergerak perlahan untuk memberi kesan ruang matematis yang dinamis.</p>
+            <button class="world-btn" data-topic="limit">Masuk Limit →</button>
+          </div>
+          <div class="limit-formula">lim x→∞ f(x)</div>
+        </article>
+
+        <article class="world-card world-geometry" id="world-geometry">
+          <div class="geo-space">
+            <span class="geo-shape cube"><i></i></span>
+            <span class="geo-shape triangle"></span>
+            <span class="geo-shape ring"></span>
+            <span class="geo-shape prism"></span>
+            <span class="geo-point p1"></span><span class="geo-point p2"></span><span class="geo-point p3"></span>
+          </div>
+          <div class="world-content">
+            <div class="world-index">03</div>
+            <div class="world-symbol">△</div>
+            <span class="world-tag">GEOMETRY WORLD</span>
+            <h3>Ruang tanpa gravitasi.</h3>
+            <p>Bangun datar dan ruang berputar, melayang, dan membentuk puzzle visual yang lebih intuitif.</p>
+            <button class="world-btn" data-topic="geometry">Masuk Geometri →</button>
+          </div>
+          <div class="geometry-formula">V = πr²h</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="challenge-section" id="challenge">
+      <div class="section-shell challenge-inner">
+        <div class="challenge-copy">
+          <span class="section-kicker">02 / PLAYABLE GAME</span>
+          <h2>Masuk arena.<br><em>Uji logikamu.</em></h2>
+          <p>Semua materi masuk ke arena. Pilih Mixed Arena untuk soal campuran, atau latih satu materi secara khusus.</p>
+          <div class="feature-list">
+            <div><span>01</span><strong>Mixed Arena</strong><small>3 materi</small></div>
+            <div><span>02</span><strong>Time Attack</strong><small>30 detik</small></div>
+            <div><span>03</span><strong>XP & Streak</strong><small>Combo reward</small></div>
+          </div>
+        </div>
+
+        <div class="game-preview">
+          <div class="game-window">
+            <div class="game-window-top">
+              <span id="gameTitle">QUEST #001 · LOGIC PUZZLE</span>
+              <div class="game-dots"><i></i><i></i><i></i></div>
+            </div>
+            <div class="game-content">
+              <div class="game-status">
+                <span>XP <b id="xpValue">0</b></span>
+                <span>STREAK <b id="streakValue">0</b></span>
+                <span>TIME <b id="timeValue">30</b></span>
+              </div>
+              <div class="game-tag" id="gameTag">ALJABAR</div>
+              <h3 id="questionTitle">Ready?</h3>
+              <p id="questionText">Pilih materi di atas lalu tekan "Mulai".</p>
+              <div class="question-box" id="questionBox"></div>
+              <div class="choice-grid" id="choices"></div>
+              <div class="game-actions">
+                <button class="game-btn primary" id="startGame">Mulai Game</button>
+                <button class="game-btn secondary" id="nextQuestion" disabled>Soal Berikutnya →</button>
+              </div>
+              <div class="xp-line"><span>REWARD</span><strong id="rewardText">+100 XP / jawaban benar</strong></div>
+            </div>
+          </div>
+          <div class="xp-badge"><span>LEVEL</span><strong id="levelValue">1</strong><small>LOGIC MASTER</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section" id="roadmap">
+      <div class="roadmap-card">
+        <div><span class="section-kicker">03 / YOUR PROGRESS</span><h2>Naik level, satu konsep demi satu.</h2><p>Game menyimpan progress selama halaman dibuka, jadi kamu bisa mengejar XP dan level.</p></div>
+        <div class="roadmap-steps">
+          <div class="step active"><span>01</span><strong>Learn</strong><small>Pahami konsep</small></div><div class="connector"></div>
+          <div class="step active"><span>02</span><strong>Play</strong><small>Masuk challenge</small></div><div class="connector"></div>
+          <div class="step"><span>03</span><strong>Master</strong><small>Unlock next level</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="result-modal" id="resultModal">
+    <div class="result-card">
+      <span class="section-kicker">QUEST COMPLETE</span>
+      <h2 id="resultTitle">Ronde selesai!</h2>
+      <div class="result-score" id="resultScore">0 XP</div>
+      <p id="resultText"></p>
+      <button class="btn btn-primary" id="closeModal">Kembali ke Arena →</button>
+    </div>
+  </div>
+
+  <footer><div class="section-shell footer-inner"><div class="brand"><span class="brand-mark">∑</span><span>Math<span>Quest</span></span></div><p>Think deeper. Solve smarter.</p><span class="footer-code">MTH-12 / 2026</span></div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
